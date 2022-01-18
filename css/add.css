@@ -1,0 +1,298 @@
+.loader {
+  display: inline-block;
+    width: 47px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+      z-index: 999999;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+      background: #cfcee0;
+    align-items: center;
+
+        z-index: 999998;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+#home {
+  margin-top: -20px;
+}
+
+.adress-box {
+  transition: opacity 4s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  /* margin-bottom: -20px; */
+  z-index: 999;
+  width: 100%;
+}
+
+.adress-box.active {
+  opacity: 1;
+  height: 50px;
+}
+
+.dialog-box.active {
+  opacity: 1;
+  height: auto;
+}
+
+.adress-box h2 {
+  /* display: none; */
+  font-size: 1.3em !important;
+  text-align: center;
+  background-color: #33c338;
+  /* padding: 2px; */
+  /* margin: 20px; */
+  /* border-radius: 7px; */
+  padding: 0;
+  margin-bottom: -20px;
+}
+
+header .wallet {
+  background: #e2457c;
+}
+
+.dialog-box {
+  display: block;
+  /* background-color: #3333; */
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.cost-innerbox {
+  width: 100%;
+  margin: auto;
+  background-color: #d0cde1;
+  padding: 12px;
+  color: #01030d;
+  margin-top: 186px;
+  opacity: 0.9;
+  /* border: 1px solid #fff; */
+  border-radius: 1px;
+  padding: 25px 0;
+  margin-top: 290px;
+}
+
+.cost-innerbox h1 {
+  font-size: 41px;
+  line-height: 1;
+  /* border-bottom: 5px solid #e2457c; */
+  width: fit-content;
+  margin: auto;
+  color: #333;
+  font-size: 2.1em;
+}
+
+.disclaimer strong {
+  font-weight: 800;
+}
+
+.cost-outerbox {}
+
+#input-amount {
+  text-align: center;
+  display: block;
+  text-align: center;
+  display: block;
+  /* margin: auto; */
+  margin: 8px auto;
+  border-radius: 5px;
+  /* background: #e2457c; */
+  /* color: #fff; */
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+
+#mint-btn {
+  color: #fff;
+  padding: 10px 40px;
+  background-color: #e2457c;
+  margin-top: 8px;
+  border: 0px solid #13dc1e;
+}
+
+#mint-btn:disabled {
+  background-color: #333;
+}
+
+.tickets {
+  text-align: center;
+  /* margin-top: 12px; */
+  font-size: 20.2px;
+  color: #fff;
+  background: #01030d;
+  width: fit-content;
+  margin: auto;
+  padding: 8px 30px;
+  /* margin-top: 535px; */
+  /* border: 1px solid #ffffff; */
+  /* display: block; */
+  /* position: relative;*/
+}
+
+.tickets-box {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 700px;
+}
+
+.countdown #clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.cost-outerbox b {
+  line-height: 25px;
+  width: 400px;
+  margin: auto;
+  font-weight: bold;
+  /* line-height: 18px; */
+  background: #33c338;
+  padding: 2px;
+}
+
+.mint-btn {
+  background-color: #33c338;
+  padding: 8px 14px;
+}
+
+.mint-btn:disabled {
+  background-color: #e2457c;
+}
+
+.countdown #clockdiv>div {
+  padding: 10px;
+  display: inline-block;
+  width: 175px;
+}
+
+.countdown #clockdiv div>span {
+  padding: 15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.countdown .smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+  color: #000;
+}
+
+.socialnav, header {
+  z-index: 9999;
+}
+
+.notif {
+  display: none;
+}
+
+.countdown {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  top: -3px;
+  text-align: center;
+  height: 0;
+  /* left: 32%; */
+}
+
+.countdown .smalltext {
+  padding-top: 17px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.countdown #clockdiv {
+  font-family: 'Space Grotesk';
+  color: #fff;
+  display: inline-block;
+  font-weight: 800;
+  text-align: center;
+  font-size: 93px;
+  top: 142px;
+  position: relative;
+  background: #d0cde16e;
+}
+
+#cost-box {
+  font-size: 30px;
+}
+
+#cost-box:after {
+  content: "ETH";
+  padding-left: 12px;
+}
